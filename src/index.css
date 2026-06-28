@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Slithen';
+  src: url('/fonts/slithen/slithen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kust';
+  src: url('/fonts/Kust/kust.woff') format('woff'),
+       url('/fonts/Kust/kust.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+/* ===== Glass Panel ===== */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(0, 102, 255, 0.1);
+}
+
+/* ===== Ghost Border ===== */
+.ghost-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Hero Title Gradient ===== */
+.hero-title-gradient {
+  background: linear-gradient(to right, #ffffff, #c2c6d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Typewriter Cursor ===== */
+.typewriter-cursor {
+  animation: blink 1s infinite;
+  font-weight: 100;
+  color: #b3c5ff;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353534;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #454747;
+}
+
+/* ===== Global Resets ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #131313;
+  color: #e5e2e1;
+}
+
+/* ===== Form Reset for Tailwind v4 ===== */
+input, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
