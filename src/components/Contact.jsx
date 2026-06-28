@@ -4,7 +4,7 @@ import { Send } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import { socials } from '../data/portfolio'
 
-// ⚠️ UPDATE THESE with your EmailJS Service ID and Template ID
+
 const EMAILJS_SERVICE_ID = 'service_2tl2nuc'
 const EMAILJS_TEMPLATE_ID = 'template_tspko5n'
 const EMAILJS_PUBLIC_KEY = 'vVPTU4RG9EpLRgBCh'
