@@ -16,6 +16,7 @@ const DESKTOP_WAYPOINTS = [
   { t: 0.80, pos: [0.3, 1.2, -0.4] },   // drift back to top-center
   { t: 0.90, pos: [-2.2, -0.2, -0.2] }, // sweep down to the left
   { t: 1.0, pos: [-4, -2.8, 0.0] }, // settle: lower left
+  
 ]
 
 
