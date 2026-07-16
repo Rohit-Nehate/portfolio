@@ -27,7 +27,7 @@ export default function Navbar() {
       className={`fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 transition-all duration-300 ease-in-out ${scrolled ? 'shadow-[0_0_40px_rgba(0,102,255,0.08)]' : ''
         }`}
     >
-      <div className="flex justify-between items-center max-w-[1280px] !mx-auto !px-4 md:!px-8 h-20">
+      <div className="flex justify-between items-center max-w-7xl mx-auto! px-4! md:px-8! h-20">
         {/* Brand */}
         <span className="font-[JetBrains_Mono] text-[32px] font-medium text-[#e5e2e1]">
           <i className='ri-code-s-slash-line'></i>
@@ -51,9 +51,9 @@ export default function Navbar() {
 
         {/* Resume Button (Desktop) */}
         <a
-          href="/resume.pdf"
+          href="/files/resume.pdf"
           download="Rohit_Nehte_Resume.pdf"
-          className="hidden md:inline-flex items-center justify-center !px-6 !py-3 bg-[#e5e2e1] text-[#131313] font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] hover:scale-105 transition-transform duration-200 rounded-[0.75rem]"
+          className="hidden md:inline-flex items-center justify-center px-6! py-3! bg-[#e5e2e1] text-[#131313] font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-widest hover:scale-105 transition-transform duration-200 rounded-xl"
         >
           Resume
         </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="md:hidden overflow-hidden border-t border-white/10 bg-[#131313]/95 backdrop-blur-xl"
           >
-            <div className="flex flex-col !px-4 !py-6 space-y-4">
+            <div className="flex flex-col px-4! py-6! space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.to}
@@ -86,7 +86,7 @@ export default function Navbar() {
                   smooth={true}
                   offset={-80}
                   duration={100}
-                  className="text-[#c2c6d8] font-medium hover:text-[#e5e2e1] transition-colors duration-200 cursor-pointer text-sm uppercase tracking-widest !py-2"
+                  className="text-[#c2c6d8] font-medium hover:text-[#e5e2e1] transition-colors duration-200 cursor-pointer text-sm uppercase tracking-widest py-2!"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -96,7 +96,7 @@ export default function Navbar() {
                 href={personal.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center !px-6 !py-3 bg-[#e5e2e1] text-[#131313] font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] rounded-[0.75rem] !mt-2"
+                className="inline-flex items-center justify-center px-6! py-3! bg-[#e5e2e1] text-[#131313] font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-widest rounded-xl mt-2!"
               >
                 Resume
               </a>

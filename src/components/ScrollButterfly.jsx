@@ -6,7 +6,7 @@ import * as THREE from 'three'
 // Desktop path — evenly spaced waypoints (~0.10–0.12 apart) with moderate,
 // consistent travel distances so the spline holds a steady, graceful speed.
 const DESKTOP_WAYPOINTS = [
-  { t: 0.00, pos: [1.6, 1.0, 0] },      // start: upper right
+  { t: 0.00, pos: [1.6, 0.8, 0] },      // start: upper right
   { t: 0.10, pos: [1.2, -1.4, -0.2] },  // dip down on the right
   { t: 0.22, pos: [-1.4, 1.4, -0.5] },  // sweep up to the left
   { t: 0.34, pos: [-2.8, 0.3, -0.6] },  // out along the left edge

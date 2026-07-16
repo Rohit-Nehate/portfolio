@@ -25,8 +25,8 @@ export default function Skills() {
 
   return (
     <div>
-      <div className="text-center !mb-16">
-        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] !mb-2 uppercase">
+      <div className="text-center mb-16!">
+        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] mb-2! uppercase">
           Toolkit
         </div>
         <h2 className="font-[Sora] text-[32px] font-semibold leading-[1.3] text-[#e5e2e1]">
@@ -44,10 +44,10 @@ export default function Skills() {
         {categories.map(([category, skillList]) => (
           <motion.div
             key={category}
-            className="glass-panel rounded-[0.5rem] !p-6 hover:-translate-y-1 transition-transform duration-300"
+            className="glass-panel rounded-[0.5rem] p-6! hover:-translate-y-1 transition-transform duration-300"
             variants={itemVariants}
           >
-            <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] !mb-4 uppercase">
+            <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] mb-4! uppercase">
               {category}
             </div>
             <motion.div
@@ -57,7 +57,7 @@ export default function Skills() {
               {skillList.map((skill) => (
                 <motion.span
                   key={skill}
-                  className="glass-panel !px-3 !py-1.5 rounded-[0.125rem] font-[JetBrains_Mono] text-[14px] leading-[1.5] text-xs text-[#e5e2e1] hover:border-[#b3c5ff]/30 transition-colors duration-200"
+                  className="glass-panel px-3! py-1.5! rounded-[0.125rem] font-[JetBrains_Mono] text-[14px] leading-[1.5] text-xs text-[#e5e2e1] hover:border-[#b3c5ff]/30 transition-colors duration-200"
                   variants={pillVariants}
                 >
                   {skill}

@@ -31,9 +31,9 @@ const techIconClass = {
 
 export default function TechStack() {
   return (
-    <div className="relative z-[45]">
-      <div className="text-center !mb-16">
-        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] !mb-2 uppercase">
+    <div className="relative z-45">
+      <div className="text-center mb-16!">
+        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] mb-2! uppercase">
           Arsenal
         </div>
         <h2 className="font-[Sora] text-[32px] font-semibold leading-[1.3] text-[#e5e2e1]">
@@ -51,7 +51,7 @@ export default function TechStack() {
         {techStack.map((tech) => (
           <motion.div
             key={tech.name}
-            className="glass-panel rounded-[0.25rem] !p-6 flex flex-col items-center justify-center gap-3 hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(179,197,255,0.15)] transition-all duration-300"
+            className="glass-panel rounded-[0.25rem] p-6! flex flex-col items-center justify-center gap-3 hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(179,197,255,0.15)] transition-all duration-300"
             variants={badgeVariants}
           >
             <i className={`${techIconClass[tech.name] || 'ri-code-line'} text-[32px] text-[#c2c6d8]`}></i>

@@ -50,14 +50,24 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Galaxy Generator",
-    desc: "Interactive 3D spiral galaxy generator with customizable parameters — particle count, branches, spin, colors, and rotation.",
-    tags: ["Three.js", "JavaScript", "WebGL"],
-    color: "#ff0080",
-    codeUrl: "https://github.com/Rohit-Nehate/galaxy-three",
-    liveUrl: "https://galaxy.evokerop.com",
-    imageUrl: "/images/galaxy.png"
-  }
+    title: "Continue It",
+    desc: "A zero-dependency Manifest V3 Chrome extension that seamlessly migrates AI conversations. Simply extract your full chat history from one platform and instantly resume it as a portable prompt in any other AI service.",
+    tags: ["JavaScript", "CSS", "Sarvam AI", "OpenAI", "Full Stack"],
+    color: "#0066ff",
+    codeUrl: "https://github.com/Rohit-Nehate/Continue-it ",
+    liveUrl: "#",
+    imageUrl: "/images/continue-it.png"
+  },
+  // {
+  //   id: 5,
+  //   title: "Galaxy Generator",
+  //   desc: "Interactive 3D spiral galaxy generator with customizable parameters — particle count, branches, spin, colors, and rotation.",
+  //   tags: ["Three.js", "JavaScript", "WebGL"],
+  //   color: "#ff0080",
+  //   codeUrl: "https://github.com/Rohit-Nehate/galaxy-three",
+  //   liveUrl: "https://galaxy.evokerop.com",
+  //   imageUrl: "/images/galaxy.png"
+  // }
 ];
 
 export const techStack = [

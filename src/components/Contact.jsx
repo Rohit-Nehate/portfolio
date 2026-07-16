@@ -48,8 +48,8 @@ export default function Contact() {
 
   return (
     <div>
-      <div className="text-center !mb-16">
-        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] !mb-2 uppercase">
+      <div className="text-center mb-16!">
+        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-widest text-[#b3c5ff] mb-2! uppercase">
           Get in touch
         </div>
         <h2 className="font-[Sora] text-[32px] font-semibold leading-[1.3] text-[#e5e2e1]">
@@ -58,7 +58,7 @@ export default function Contact() {
       </div>
 
       <motion.div
-        className="max-w-2xl !mx-auto glass-panel !p-8 rounded-[0.5rem]"
+        className="max-w-2xl mx-auto! glass-panel p-8! rounded-lg"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -69,7 +69,7 @@ export default function Contact() {
             <div>
               <label
                 htmlFor="contact-name"
-                className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] !mb-2 font-bold tracking-[0.1em]"
+                className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] mb-2! font-bold tracking-widest"
               >
                 Name
               </label>
@@ -81,13 +81,13 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Your name"
                 required
-                className="w-full bg-[#2a2a2a] border border-white/10 rounded-[0.25rem] !px-4 !py-3 text-[#e5e2e1] focus:outline-none focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
+                className="w-full bg-[#2a2a2a] border border-white/10 rounded-sm px-4! py-3! text-[#e5e2e1] focus:outline-hidden focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
               />
             </div>
             <div>
               <label
                 htmlFor="contact-email"
-                className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] !mb-2 font-bold tracking-[0.1em]"
+                className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] mb-2! font-bold tracking-widest"
               >
                 Email
               </label>
@@ -99,14 +99,14 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="your@email.com"
                 required
-                className="w-full bg-[#2a2a2a] border border-white/10 rounded-[0.25rem] !px-4 !py-3 text-[#e5e2e1] focus:outline-none focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
+                className="w-full bg-[#2a2a2a] border border-white/10 rounded-sm px-4! py-3! text-[#e5e2e1] focus:outline-hidden focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
               />
             </div>
           </div>
           <div>
             <label
               htmlFor="contact-message"
-              className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] !mb-2 font-bold tracking-[0.1em]"
+              className="block font-[JetBrains_Mono] text-xs text-[#c2c6d8] mb-2! font-bold tracking-widest"
             >
               Message
             </label>
@@ -118,13 +118,13 @@ export default function Contact() {
               placeholder="What message do you have for me?"
               rows={5}
               required
-              className="w-full bg-[#2a2a2a] border border-white/10 rounded-[0.25rem] !px-4 !py-3 text-[#e5e2e1] focus:outline-none focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 resize-none placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
+              className="w-full bg-[#2a2a2a] border border-white/10 rounded-xs px-4! py-3! text-[#e5e2e1] focus:outline-hidden focus:border-[#b3c5ff]/50 focus:ring-1 focus:ring-[#b3c5ff]/50 transition-colors duration-200 resize-none placeholder:text-[#c2c6d8]/40 font-[Inter] text-base"
             />
           </div>
           <button
             type="submit"
             disabled={status === 'sending'}
-            className={`w-full font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] !py-4 rounded-[0.25rem] flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 ${status === 'success'
+            className={`w-full font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-widest py-4! rounded-sm flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 ${status === 'success'
                 ? 'bg-green-500 text-white'
                 : status === 'error'
                   ? 'bg-red-500 text-white'
@@ -159,7 +159,7 @@ export default function Contact() {
         </form>
 
         {/* Social icons */}
-        <div className="!mt-8 !pt-8 border-t border-white/10 flex justify-center gap-6">
+        <div className="mt-8! pt-8! border-t border-white/10 flex justify-center gap-6">
           <a
             target="_blank"
             href={socials.github}

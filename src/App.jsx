@@ -17,7 +17,7 @@ export default function App() {
       <ScrollButterfly />
       <Navbar />
       <Hero />
-      <main className="max-w-[1280px] !mx-auto !px-4 md:!px-8 !pb-32">
+      <main className="max-w-7xl mx-auto! px-4! md:px-8! pb-32!">
         <AnimatedSection id="about">
           <About />
         </AnimatedSection>

@@ -19,8 +19,8 @@ const cardVariants = {
 export default function Projects() {
   return (
     <div>
-      <div className="text-center !mb-16">
-        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-[0.1em] text-[#b3c5ff] !mb-2 uppercase">
+      <div className="text-center mb-16!">
+        <div className="font-[JetBrains_Mono] text-[12px] font-bold leading-none tracking-widest text-[#b3c5ff] mb-2! uppercase">
           Work
         </div>
         <h2 className="font-[Sora] text-[32px] font-semibold leading-[1.3] text-[#e5e2e1]">
@@ -38,7 +38,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            className="glass-panel rounded-[0.5rem] overflow-hidden group flex flex-col"
+            className="glass-panel rounded-lg overflow-hidden group flex flex-col"
             variants={cardVariants}
             whileHover={{ y: -4 }}
           >
@@ -60,29 +60,29 @@ export default function Projects() {
             </div>
 
             {/* Body */}
-            <div className="!p-6 flex-grow flex flex-col">
-              <h3 className="font-[Sora] text-xl text-[#e5e2e1] !mb-2 font-semibold">
+            <div className="p-6! grow flex flex-col">
+              <h3 className="font-[Sora] text-xl text-[#e5e2e1] mb-2! font-semibold">
                 {project.title}
               </h3>
-              <p className="font-[Inter] text-[16px] leading-[1.6] text-[#c2c6d8] !mb-4 flex-grow">
+              <p className="font-[Inter] text-[16px] leading-[1.6] text-[#c2c6d8] mb-4! grow">
                 {project.desc}
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="!px-3 !py-1 rounded-[0.125rem] bg-[#353534] text-[#e5e2e1] font-[JetBrains_Mono] text-[14px] leading-[1.5] text-xs"
+                    className="px-3! py-1! rounded-xs bg-[#353534] text-[#e5e2e1] font-[JetBrains_Mono] text-[14px] leading-normal text-xs"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <div className="!mt-auto !pt-4 flex items-center gap-3">
+              <div className="mt-auto! pt-4! flex items-center gap-3">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.codeUrl}
-                  className="glass-panel !p-2 rounded-[0.125rem] hover:border-[#b3c5ff]/50 transition-colors"
+                  className="glass-panel p-2! rounded-xs hover:border-[#b3c5ff]/50 transition-colors"
                   aria-label="View code"
                 >
                   <Code2 size={16} className="text-[#c2c6d8]" />
@@ -91,7 +91,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.liveUrl}
-                  className="glass-panel !p-2 rounded-[0.125rem] hover:border-[#b3c5ff]/50 transition-colors"
+                  className="glass-panel p-2! rounded-xs hover:border-[#b3c5ff]/50 transition-colors"
                   aria-label="View live"
                 >
                   <ExternalLink size={16} className="text-[#c2c6d8]" />
